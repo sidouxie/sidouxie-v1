@@ -1,0 +1,162 @@
+@media all and (max-width: 1024px)
+{
+	#bloc_page{width: auto;}
+	#bloc_brodure{display:none; visibility: hidden;}
+	section {flex-direction: column; margin-left: 15px;}
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('polices/OpenSans-Regular-webfont.eot');
+    src: url('polices/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/OpenSans-Regular-webfont.woff') format('woff'),
+         url('polices/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('polices/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('polices/CaviarDreams-webfont.eot');
+    src: url('polices/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/CaviarDreams-webfont.woff') format('woff'),
+         url('polices/CaviarDreams-webfont.ttf') format('truetype'),
+         url('polices/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+   	   /* =========== Définition des polices =========== */
+body {
+	background-color: #e9e9e9;
+	font-family: 'open_sansregular', Arial, sans-serif;
+    color: #181818;
+    margin: 0;
+}
+#bloc_page{
+	width: 100%;
+	margin:auto;
+	padding:auto;
+}
+
+header h2,header p,section h1  {
+	font-family: 'caviar_dreamsregular',Arial, sans-serif;
+}
+
+		/* =========== Eléments Brodure =========== */
+
+#bloc_brodure{
+	background-image:url("images/brodure.png");
+	display: inline-flex;
+	position: absolute;
+	height: 100%;
+	width: 5%;
+	min-height:700px;
+	min-width: 78px;
+}
+
+        /* =========== Eléments Header =========== */
+
+#titre_principale {
+	display: inline-block;
+	position: relative;
+	margin-top: 15px;
+	width: 85%;
+	left: 10%;
+    text-align: center;
+	border-radius: 10px;
+	background-color: rgba(50,91,97,0.1);
+}
+#titre_principale h1{
+	position: relative;
+	margin-top: 2px;
+	margin-bottom: 5px;
+	top: 20px;
+	font-size: 2.5em;
+}
+#titre_principale h2{
+	font-size: 1.4em;
+}
+#titre_principale p{
+	font-size: 1em;
+}
+#logo {
+	position: relative;
+	float: right;
+	margin: 20px 25px 25px 0;
+}
+
+        /* =========== Eléments Section ========= */
+
+section {
+	display: flex;
+	position: relative;
+	text-align: justify;
+	vertical-align: top;
+	margin-left: 85px;
+	margin-right: 20px;
+	width: 100%;
+
+}
+
+section h1{
+	text-align: left;
+	color:#A43931;
+}
+
+section li,section p{
+	font-size: 0.9em;
+}
+#mon_experience {
+	display: inline-block;
+	position: relative;
+	width: 30%;
+}
+
+#mes_competance {
+	display: inline-block;
+	position: relative;
+	margin-left: 25px;
+	width: 20%;
+}
+
+.silver {
+ color: gray;
+ font-size: 1.1em;
+}
+
+#ma_formation {
+	display: inline-block;
+	position: relative;
+	margin-left: 25px;
+	width: 30%;
+}
+
+a {
+	text-decoration: none;
+	font-style: italic;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: red;
+	transition-duration: 0.2s;
+}
+
+a:active{
+	text-decoration: none;
+	color:orange;
+	font-style: bold;
+}
+
+footer h2{
+	font-family: 'caviar_dreamsregular',Arial, sans-serif;
+	font-size: 1.2rem;
+	text-align: center;
+	color: #294d52;
+
+}
