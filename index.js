@@ -6,8 +6,8 @@ const port = process.env.PORT || 3000;
 //Middleware
 app.use(express.static("public"));
 
-app.get("/*", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+app.get("/", (req, res) => {
+  res.send("hello");
 });
 
 app.listen(port, () => {
